@@ -129,6 +129,33 @@
             <p class="project-cost"> <span class="dollar">$</span><span id="total-price">0</span></p>
     </div>
 
+<input type="hidden" name="Email">
+
+    <div class="project-price-calculate-btn-container">
+            <button class="project-price-calculate-btn">Отправить запрос</button>
+    </div> 
+
+</form>
+    </section>
+ </div>
+ <div class="modal-bgb" id="modal-email">
+     <div class="modal-container">
+      <button class="modal-close-button">   
+        <img src="./img/icons/close-icon.svg" class="">
+      </button>        
+        <img src="./img/icons/mail-icon.svg" class="modal-icon">
+            <h4 class="modal-title">Я свяжусь с вами на <br>
+                протяжении ближайшего часа</h4>
+     <form class="modal-container-form" action="" id="modal-email-container">
+            <div class="email-input-container " id="email-input-container">
+                <label for="user-email" class="user-email-title">Email</label>
+                <input placeholder="Укажите email" class="user-email" type="email" name="user-email" id="user-email">
+                <p class="email-error-text">Проверьте email</p>
+            </div>    
+        <button type="submit" class="button-send" >Отправить</button>
+     </form>
+    </div>
+ </div>
 
     <script src="./js/script.js"></script>
   </body>
