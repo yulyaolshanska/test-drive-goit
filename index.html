@@ -74,8 +74,62 @@
                 </ul>
             </div>
     </section>
- 
-    
+ <section class="calculator">
+  <form  class="calculator-form" method="post" name="contact" data-netlify="true" id="calculator-form" >
+        <h4 class="calculator-title">Расчитай стоимость проекта</h4>
+      <div class="project-type-container" >
+        <label class="site-type" form="project-type">Тип сайта</label>
+        <select name="project-type" id="project-type" class="project-price-select">
+            <option value="landing-page">Landing page</option>
+            <option value="online-store">Online Store</option>
+            <option value="web-application">Web Application</option>
+            <option value="mobile-application">Mobile Application</option>
+        </select>
+    </div>
+    <div class="activity-type-container container">
+        <p class="work-types-title" >Типы работы</p>
+        <div class="activity-type-item">
+            <input type="checkbox" name="pm" id="pm" class="checkbox">
+                <label class="activity-type-title" for="pm">Project Management</label>
+        </div>
+        <div class="activity-type-item">
+        <input type="checkbox"  checked name="design" id="design" class="checkbox">
+            <label for="design" class="activity-type-title">Design</label>
+        </div> 
+        <div class="activity-type-item"> 
+        <input type="checkbox" name="developer" id="developer" class="checkbox">
+            <label for="developer" class="activity-type-title">Developer</label>
+        </div> 
+        <div class="activity-type-item"> 
+        <input type="checkbox" name="qa" id="qa" class="checkbox">
+            <label for="qa" class="activity-type-title">QA</label>
+        </div>
+
+        <!-- Чекбоксы 
+        <label class="container">
+                <input type="checkbox" id="click" >
+                <span class="checkmark">PM </span>
+            </label>
+        <label class="container">  
+                <input type="checkbox" checked="checked" id="click" >
+                <span class="checkmark">Design</span>
+        </label>
+        <label class="container">  
+                <input type="checkbox" id="click" >
+                <span class="checkmark">Developer </span>
+        </label>
+        <label class="container">  
+                <input type="checkbox" checked="checked" id="click" >
+                <span class="checkmark">QA </span>
+        </label>
+    </div>
+    -->
+     <div class="project-price-container">
+            <p class="project-cost-title">Стоимость</p>
+            <p class="project-cost"> <span class="dollar">$</span><span id="total-price">0</span></p>
+    </div>
+
+
     <script src="./js/script.js"></script>
   </body>
 </html>
