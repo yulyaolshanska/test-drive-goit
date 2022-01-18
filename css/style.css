@@ -46,9 +46,9 @@ button {
   padding-right: 15px;
   padding-left: 15px;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 460px;
+    width: 480px;
   }
 }
 
