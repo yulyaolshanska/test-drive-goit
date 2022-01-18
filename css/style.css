@@ -1,22 +1,101 @@
-html {
+/* html {
   height: 100%;
   width: 100%;
-}
+} */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #e5e5e5;
-  height: 100%;
+  /* height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  padding: 0px;
+  cursor: pointer;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 400px) {
+  .container {
+    width: 460px;
+  }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.social {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.card {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px px 4px 4px;
+}
+
+.card__info {
+  padding: 20px;
+}
+.card__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.19;
+}
+.card__text {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.technologies__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 .wrapped {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   padding: 80px;
   justify-content: space-between;
-  position: relative;
+  position: relative; */
 }
 .telegram-linc,
 .viber-link,
@@ -108,7 +187,7 @@ body {
 }
 .user-email {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 15px;
   font-size: 18px;
   line-height: 24px;
@@ -163,28 +242,44 @@ body {
 .modal-container-success {
   justify-content: center;
 }
+
 .contacts {
-  position: absolute;
+  padding-top: 20px;
+
+  /* position: absolute;
   top: 35px;
   right: 195px;
+  align-items: center; */
+}
+.contacts__list {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
+
+.contacts__item:not(:last-child) {
+  margin-right: 10px;
+}
 .my-works-link {
+  display: block;
   font-size: 16px;
   line-height: 24px;
   color: #eb5757;
   font-style: normal;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .experience-section {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  width: 275px;
+  width: 275px; */
 }
 .my-photo {
-  margin-bottom: 25px;
-  border-radius: 50%;
+  margin: 0 auto;
+
+  text-align: center;
+  /* border-radius: 50%; */
 }
 .fb-icon-img {
   margin-right: 15px;
@@ -194,15 +289,15 @@ body {
   height: 20px;
 }
 .experience {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  /* margin-top: 35px; */
+  margin-bottom: 25px;
 }
-.experience-text {
+.experience__text {
   text-align: center;
   font-size: 16px;
   line-height: 24px;
 }
-.experience-text-first {
+.experience__text--first {
   margin-bottom: 8px;
 }
 .technologies {
@@ -212,36 +307,36 @@ body {
   margin-left: 15px;
 }
 .my-info {
-  margin-left: 25px;
+  /* margin-left: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 33%;
+  width: 33%; */
 }
-h2 {
+/* h2 {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
   margin-bottom: 32px;
-}
-h1 {
+} */
+/* h1 {
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
   color: #333333;
   margin-bottom: 35px;
-}
+} */
 .my-location {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
   color: #faeeee;
   background: #57a35e;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding: 4px 16px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .my-description {
   font-size: 16px;
@@ -274,12 +369,26 @@ li {
 .fb-icon {
   text-decoration: none;
 }
+
+.my-info__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.18;
+  text-align: center;
+}
 .calculator {
-  width: 33%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   margin-left: 24px;
-  margin-right: 110px;
+  margin-right: 110px;  */
+  /* background: #ffffff;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px; */
+}
+
+.calculator-form {
+  /* width: calc(100% - 40px); */
+  max-width: 480px;
   background: #ffffff;
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
@@ -296,11 +405,11 @@ li {
   padding: 40px;
 }
 .project-price-select {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .project-type-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .project-price-calculate-btn {
   font-weight: bold;
@@ -315,8 +424,8 @@ li {
   cursor: pointer;
 }
 .project-price-calculate-btn-container {
-  width: 100%;
-  text-align: center;
+  /* width: 100%;
+  text-align: center; */
 }
 .project-cost {
   margin-bottom: 30px;
@@ -341,11 +450,11 @@ li {
   width: 18px;
   height: 18px;
 }
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
-}
+} */
 .project-price-select {
   border: none;
   outline: none;
