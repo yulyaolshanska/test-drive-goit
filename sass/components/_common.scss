@@ -3,16 +3,12 @@
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (max-width: $mobile-only) {
+    width: $mobile;
   }
-  @media screen and (min-width: 780px) {
-    width: 780px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  //   @media screen and (min-width: $desktop) {
+  //     width: $desktop;
+  //   }
 }
 
 .section {
@@ -28,4 +24,27 @@
   line-height: 24px;
   color: #333333;
   margin-bottom: 16px;
+}
+
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+
+.wrapped {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //   padding: 80px;
+
+    //   position: relative;
+  }
+}
+.about-me {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }

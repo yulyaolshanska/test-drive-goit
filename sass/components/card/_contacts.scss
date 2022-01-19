@@ -5,12 +5,7 @@
   height: 18px;
   text-decoration: none;
 }
-.telegram-icon,
-.viber-icon,
-.telephone-icon {
-  width: 18px;
-  height: 18px;
-}
+
 .telegram-icon,
 .viber-icon {
   margin-right: 15px;
@@ -28,10 +23,13 @@
 
 .contacts {
   padding-top: 20px;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+  }
 
-  /* position: absolute;
-  top: 35px;
-  right: 195px;
+  /*
   align-items: center; */
 }
 .contacts__list {
