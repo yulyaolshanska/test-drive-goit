@@ -1,0 +1,45 @@
+.telegram-linc,
+.viber-link,
+.telephone-link {
+  width: 18px;
+  height: 18px;
+  text-decoration: none;
+}
+.telegram-icon,
+.viber-icon,
+.telephone-icon {
+  width: 18px;
+  height: 18px;
+}
+.telegram-icon,
+.viber-icon {
+  margin-right: 15px;
+}
+.telephone-icon {
+  margin-right: 20px;
+}
+.telephone-link-number {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+.contacts {
+  padding-top: 20px;
+
+  /* position: absolute;
+  top: 35px;
+  right: 195px;
+  align-items: center; */
+}
+.contacts__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 10px;
+}

@@ -1,0 +1,70 @@
+.my-info {
+  /* margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 33%; */
+}
+/* h2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 32px;
+} */
+/* h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #333333;
+  margin-bottom: 35px;
+} */
+.my-location {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #faeeee;
+  background: #57a35e;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 4px 16px;
+  margin-bottom: 30px;
+}
+.my-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin-bottom: 16px;
+}
+.my-skills-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+li {
+  margin-bottom: 5px;
+}
+.my-skills-item {
+  font-size: 16px;
+  line-height: 24px;
+  color: #57a35e;
+  list-style: disc;
+}
+.my-skills {
+  padding-left: 15px;
+}
+.my-skills-text {
+  color: #4f4f4f;
+}
+.fb-icon {
+  text-decoration: none;
+}
+
+.my-info__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.18;
+  text-align: center;
+}
