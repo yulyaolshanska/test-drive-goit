@@ -32,14 +32,14 @@
 } */
 
 .wrapped {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    //   padding: 80px;
+  position: relative;
+  //   @media screen and (min-width: $desktop) {   display: flex;
+  //     flex-direction: row;
+  //   justify-content: space-between;
+  //       padding: 80px;
 
-    //   position: relative;
-  }
+  //        position: relative;
+  //   }
 }
 .about-me {
   @media screen and (min-width: $tablet) {
