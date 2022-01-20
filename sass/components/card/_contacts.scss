@@ -1,43 +1,39 @@
-.telegram-linc,
-.viber-link,
-.telephone-link {
-  width: 18px;
-  height: 18px;
-  text-decoration: none;
+.contacts-section {
+  padding-top: 10px;
 }
 
-.telegram-icon,
-.viber-icon {
-  margin-right: 15px;
-}
-.telephone-icon {
-  margin-right: 20px;
-}
 .telephone-link-number {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   color: #4f4f4f;
-  text-decoration: none;
 }
 
 .contacts {
-  // padding-top: 20px;
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    top: 0px;
-    right: 25px;
-  }
-
-  /*
-  align-items: center; */
+  display: flex;
 }
+
 .contacts__list {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    margin-left: auto;
+  }
 }
 
 .contacts__item:not(:last-child) {
+  margin-right: 15px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+}
+.contacts__icon {
   margin-right: 10px;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: #4f4f4f;
 }

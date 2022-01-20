@@ -18,21 +18,15 @@
   </head>
   <body>
     <div class="wrapped">
-      <section class="contacts">
-       <div class="container"> <ul class="contacts__list">
-          <li class="contacts__item"> <a href="" class="telegram-linc">
-          <img class="telegram-icon" src="./img/icons/telegram-icon.svg" alt="" />
+      <section class="contacts-section">
+       <div class="container"> <div class="contacts"><ul class="contacts__list">
+          <li class="contacts__item"> <a href="" class="contacts__link">
+          <svg  class="contacts__icon" width="20" height="20"><use href="img/icons/icons.svg#icon-telegram"></use></svg>
+           <svg  class="contacts__icon" width="20" height="20"><use href="img/icons/icons.svg#icon-phone1"></use></svg>+380 63 333 33 33 
         </a></li>
-          <li class="contacts__item"> <a href="" class="viber-link">
-          <img class="viber-icon" src="./img/icons/viber-icon.svg" />
-        </a></li>
-          <li class="contacts__item">   <a href="tel:+380633333333" class="telephone-link">
-          <img class="telephone-icon" src="./img/icons/phone-icon.svg" />
-        </a></li>
-          <li class="contacts__item"> <a href="tel:+380633333333" class="telephone-link-number"> +380 63 333 33 33 </a></li>
-          
+          <li class="contacts__item"> <a href="mail:yulyaolshanska@gmail.com" class="contacts__link">  <svg  class="contacts__icon " width="20" height="20"><use href="img/icons/icons.svg#icon-envelope"></use></svg> yulyaolshanska@gmail.com</a></li>
         </ul>
-       
+       </div>
        
      
        </div>
@@ -41,38 +35,44 @@
       <section class="section experience-section">
         <div class="container">
           <div class="card">
-            <img class="my-photo" width="275px" src="./img/BSOG9527.jpg" alt="My photo" />
+            <img class="card__photo" width="275px" src="./img/BSOG9527.jpg" alt="My photo" />
 <div class="card__info"> <h2 class="card__title">Юлия Ольшанская</h2>
-            <p class="card__text">Frontend Developer</p>
+            <p class="card__text">Full Stack Developer</p>
             <ul class="social">
               <li class="social__item">
-                <a class="fb-icon" href="https://www.facebook.com/julia.olshanska/">
-                  <img
-                    class="icon fb-icon-img"
-                    src="./img/icons/fb-icon.svg"
-                    alt="My facebook link"
-                  />
+                <a class="" href="https://www.facebook.com/julia.olshanska/" aria-label="facebook">
+                  <svg  class="icon " width="20" height="20"><use href="img/icons/icons.svg#icon-facebook"></use></svg>
+              
+                  
                 </a>
               </li>
               <li class="social__item">
-                <a href="">
-                  <img class="icon" src="./img/icons/Vector1.svg" alt="My instagram link" />
+                <a href="" aria-label="instagram">
+                   <svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-instagram"></use></svg>
+                 
                 </a>
               </li>
-              <li class="social__item"><a href=""></a></li>
+              <li class="social__item"><a href="" aria-label="linkedin">
+                   <svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-linkedin"></use></svg>
+                 
+                </a></li>
             </ul>
 
             <div class="experience">
-              <p class="experience__text experience-text--first">32 готовых проекта</p>
-              <p class="experience__text">2 года опыта</p>
+              <p class="experience__text experience-text--first">10 готовых проекта</p>
+              <p class="experience__text">1 год опыта</p>
             </div>
 
             <ul class="technologies__list">
-              <li><img class="technologies-icon" src="./img/icons/js-icon.svg" alt="" /></li>
-              <li><img class="technologies-icon" src="./img/icons/nodejs-icon.svg" alt="" /></li>
-              <li><img class="technologies-icon" src="./img/icons/react-icon.svg" alt="" /></li>
-              <li></li>
-              <li></li>
+              <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-javascript"></use></svg></li>
+              <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-node-dot-js"></use></svg></li>
+              <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-react"></use></svg></li>
+               <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-visualstudiocode"></use></svg></li>
+              <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-html5"></use></svg></li>
+              <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-css3"></use></svg></li>
+              <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-sass"></use></svg></li>
+               <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-github"></use></svg></li>
+                <li class="technologies__item"><svg  class="icon" width="20" height="20"><use href="img/icons/icons.svg#icon-git"></use></svg></li>
             </ul>
 
             
@@ -93,19 +93,20 @@
           </p>
           <p class="my-description">Я - человек-оркестр. В одиночку заменяю целую веб-студию.</p>
           <div>
-            <p class="my-skills-title">Умею:</p>
             <ul class="my-skills">
-              <li class="my-skills-item">
-                <p class="my-skills-text">Управлять IT-проектами и командами;</p>
+              <li>            <p class="my-skills__title">Умею:</p>
+</li>
+              <li class="my-skills__item">
+                <p class="my-skills__text">Управлять IT-проектами и командами;</p>
               </li>
-              <li class="my-skills-item">
-                <p class="my-skills-text">Senior Front End разработчик;</p>
+              <li class="my-skills__item">
+                <p class="my-skills__text">Junior Front End разработчик;</p>
               </li>
-              <li class="my-skills-item">
-                <p class="my-skills-text">Middle Back End разработчик;</p>
+              <li class="my-skills__item">
+                <p class="my-skills__text">Junior Back End разработчик;</p>
               </li>
-              <li class="my-skills-item">
-                <p class="my-skills-text">
+              <li class="my-skills__item">
+                <p class="my-skills__text">
                   Могу проконтролировать качество своего или вашего проекта, как QA - специалист.
                 </p>
               </li>
@@ -118,13 +119,13 @@
       <div class="container">
         
         <form
-          class="calculator-form"
+          class="calculator__form"
           method="post"
           name="contact"
           data-netlify="true"
           id="calculator-form"
         >
-          <h4 class="calculator-title">Расчитай стоимость проекта</h4>
+          <h4 class="calculator__title">Расчитай стоимость проекта</h4>
           <div class="project-type-container">
             <label class="site-type" form="project-type">Тип сайта</label>
             <select name="project-type" id="project-type" class="project-price-select">

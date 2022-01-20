@@ -12,7 +12,7 @@
   /* */
 }
 
-.calculator-form {
+.calculator__form {
   /* width: calc(100% - 40px); */
   max-width: 480px;
   background: #ffffff;
@@ -20,8 +20,9 @@
   border-radius: 16px;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px;
 }
-.calculator-title {
+.calculator__title {
   color: #57a35e;
   font-weight: bold;
   font-size: 16px;
@@ -29,9 +30,7 @@
   padding-bottom: 50px;
   text-align: center;
 }
-.calculator-form {
-  padding: 40px;
-}
+
 .project-price-select {
   font-family: 'Montserrat', sans-serif;
 }

@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
   @media screen and (max-width: $mobile-only) {
     width: $mobile;
   }
@@ -14,8 +14,21 @@
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
 }
 
+.experience-section {
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc(100% / 3);
+  }
+}
 .site-type,
 .work-types-title,
 .project-cost-title {
@@ -26,20 +39,8 @@
   margin-bottom: 16px;
 }
 
-/* html {
-  height: 100%;
-  width: 100%;
-} */
-
 .wrapped {
   position: relative;
-  //   @media screen and (min-width: $desktop) {   display: flex;
-  //     flex-direction: row;
-  //   justify-content: space-between;
-  //       padding: 80px;
-
-  //        position: relative;
-  //   }
 }
 .about-me {
   @media screen and (min-width: $tablet) {

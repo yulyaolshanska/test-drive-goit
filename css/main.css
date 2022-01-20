@@ -27,6 +27,8 @@ img {
 
 a {
   display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -44,7 +46,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -58,6 +60,25 @@ button {
   padding-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .experience-section {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .experience-section {
+    width: calc(100% / 3);
+  }
+}
+
 .site-type,
 .work-types-title,
 .project-cost-title {
@@ -68,10 +89,6 @@ button {
   margin-bottom: 16px;
 }
 
-/* html {
-  height: 100%;
-  width: 100%;
-} */
 .wrapped {
   position: relative;
 }
@@ -88,21 +105,8 @@ button {
   }
 }
 
-.telegram-linc,
-.viber-link,
-.telephone-link {
-  width: 18px;
-  height: 18px;
-  text-decoration: none;
-}
-
-.telegram-icon,
-.viber-icon {
-  margin-right: 15px;
-}
-
-.telephone-icon {
-  margin-right: 20px;
+.contacts-section {
+  padding-top: 10px;
 }
 
 .telephone-link-number {
@@ -110,49 +114,52 @@ button {
   font-size: 16px;
   line-height: 24px;
   color: #4f4f4f;
-  text-decoration: none;
 }
 
 .contacts {
-  /*
-  align-items: center; */
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts {
-    position: absolute;
-    top: 0px;
-    right: 25px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+  }
 }
 
 .contacts__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__icon {
   margin-right: 10px;
 }
 
-.social {
+.contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  color: #4f4f4f;
 }
 
 .card {
@@ -160,6 +167,12 @@ button {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.card__photo {
+  margin: 0 auto;
+  text-align: center;
+  /* border-radius: 50%; */
 }
 
 .card__info {
@@ -178,7 +191,7 @@ button {
   font-weight: 500;
 }
 
-.technologies__list {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,52 +204,11 @@ button {
   margin-bottom: 25px;
 }
 
-.my-works-link {
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  color: #eb5757;
-  font-style: normal;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.experience-section {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 275px; */
-}
-
-@media screen and (min-width: 768px) {
-  .experience-section {
-    width: calc(100% / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .experience-section {
-    width: calc(100% / 3);
-  }
-}
-
-.my-photo {
-  margin: 0 auto;
-  text-align: center;
-  /* border-radius: 50%; */
-}
-
-.fb-icon-img {
+.social__item:not(:last-child) {
   margin-right: 15px;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
-}
-
 .experience {
-  /* margin-top: 35px; */
   margin-bottom: 25px;
 }
 
@@ -250,12 +222,30 @@ button {
   margin-bottom: 8px;
 }
 
-.technologies {
-  margin-bottom: 50px;
+.technologies__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
 }
 
-.technologies-icon {
-  margin-left: 15px;
+.technologies__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.my-works-link {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #eb5757;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .my-info {
@@ -276,6 +266,20 @@ button {
   .my-info {
     width: calc(100% / 3);
   }
+}
+
+.my-info .my-info__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.my-info .my-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin-bottom: 16px;
 }
 
 /* h2 {
@@ -304,14 +308,7 @@ button {
   margin-bottom: 30px;
 }
 
-.my-description {
-  font-size: 16px;
-  line-height: 24px;
-  color: #4f4f4f;
-  margin-bottom: 16px;
-}
-
-.my-skills-title {
+.my-skills__title {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -319,34 +316,23 @@ button {
   margin-bottom: 16px;
 }
 
-li {
-  margin-bottom: 5px;
+.my-skills {
+  padding-left: 15px;
 }
 
-.my-skills-item {
+.my-skills__item {
   font-size: 16px;
   line-height: 24px;
   color: #57a35e;
   list-style: disc;
 }
 
-.my-skills {
-  padding-left: 15px;
-}
-
-.my-skills-text {
+.my-skills__text {
   color: #4f4f4f;
 }
 
 .fb-icon {
   text-decoration: none;
-}
-
-.my-info__title {
-  margin-bottom: 20px;
-  font-size: 20px;
-  line-height: 1.18;
-  text-align: center;
 }
 
 .calculator {
@@ -369,7 +355,7 @@ li {
   }
 }
 
-.calculator-form {
+.calculator__form {
   /* width: calc(100% - 40px); */
   max-width: 480px;
   background: #ffffff;
@@ -378,19 +364,16 @@ li {
   border-radius: 16px;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px;
 }
 
-.calculator-title {
+.calculator__title {
   color: #57a35e;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   padding-bottom: 50px;
   text-align: center;
-}
-
-.calculator-form {
-  padding: 40px;
 }
 
 .project-price-select {

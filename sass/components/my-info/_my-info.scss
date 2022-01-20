@@ -5,6 +5,20 @@
   @media screen and (min-width: $desktop) {
     width: calc(100% / 3);
   }
+
+  .my-info__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.18;
+    text-align: center;
+  }
+
+  .my-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4f4f4f;
+    margin-bottom: 16px;
+  }
   /* margin-left: 25px;
   display: flex;
   flex-direction: column;
@@ -36,41 +50,28 @@
   padding: 4px 16px;
   margin-bottom: 30px;
 }
-.my-description {
-  font-size: 16px;
-  line-height: 24px;
-  color: #4f4f4f;
-  margin-bottom: 16px;
-}
-.my-skills-title {
+
+.my-skills__title {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
   margin-bottom: 16px;
 }
-li {
-  margin-bottom: 5px;
+
+.my-skills {
+  padding-left: 15px;
 }
-.my-skills-item {
+.my-skills__item {
   font-size: 16px;
   line-height: 24px;
   color: #57a35e;
   list-style: disc;
 }
-.my-skills {
-  padding-left: 15px;
-}
-.my-skills-text {
+
+.my-skills__text {
   color: #4f4f4f;
 }
 .fb-icon {
   text-decoration: none;
-}
-
-.my-info__title {
-  margin-bottom: 20px;
-  font-size: 20px;
-  line-height: 1.18;
-  text-align: center;
 }
