@@ -4,7 +4,7 @@
   padding-right: 15px;
   padding-left: 15px;
   @media screen and (max-width: $mobile-only) {
-    width: $mobile;
+    max-width: $mobile;
   }
   //   @media screen and (min-width: $desktop) {
   //     width: $desktop;
