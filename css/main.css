@@ -52,7 +52,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -83,16 +83,6 @@ button {
   .experience-section {
     width: calc(100% / 3);
   }
-}
-
-.site-type,
-.work-types-title,
-.project-cost-title {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
-  margin-bottom: 16px;
 }
 
 .wrapped {
@@ -419,6 +409,17 @@ button {
   text-align: center;
 }
 
+.site-type,
+.work-types-title,
+.project-cost-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 16px;
+  display: block;
+}
+
 .project-price-select {
   font-family: 'Montserrat', sans-serif;
 }
@@ -464,6 +465,7 @@ button {
   color: #4f4f4f;
   border-bottom: 1px solid #4f4f4f;
   padding-bottom: 8px;
+  width: 100%;
 }
 
 .activity-type-item {

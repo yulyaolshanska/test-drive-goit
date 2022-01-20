@@ -13,7 +13,13 @@
       href="https: //fonts.googleapis.com/css2? family = Montserrat & display = swap "
       rel=" stylesheet "
     />
-    <link rel="stylesheet" href=".\css\reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -135,38 +141,41 @@
               <option value="mobile-application">Mobile Application</option>
             </select>
           </div>
-          <div class="activity-type-container container">
+          <div class="activity-type-container ">
             <p class="work-types-title">Типы работы</p>
-            <div class="activity-type-item">
+            <ul>
+            <li class="activity-type-item">
               <input type="checkbox" name="pm" id="pm" class="checkbox" />
               <label class="activity-type-title" for="pm">Project Management</label>
-            </div>
-            <div class="activity-type-item">
+            </li>
+            <li class="activity-type-item">
               <input type="checkbox" checked name="design" id="design" class="checkbox" />
               <label for="design" class="activity-type-title">Design</label>
-            </div>
-            <div class="activity-type-item">
+            </li>
+            <li class="activity-type-item">
               <input type="checkbox" name="developer" id="developer" class="checkbox" />
               <label for="developer" class="activity-type-title">Developer</label>
-            </div>
-            <div class="activity-type-item">
+            </li>
+            <li class="activity-type-item">
               <input type="checkbox" name="qa" id="qa" class="checkbox" />
               <label for="qa" class="activity-type-title">QA</label>
-            </div>
-            <div class="project-price-container">
+            </li>
+            </ul>
+            
               <p class="project-cost-title">Стоимость</p>
               <p class="project-cost">
                 <span class="dollar">$</span><span id="total-price">0</span>
               </p>
+            </div>
+             <div class="project-price-calculate-btn-container">
+              <button class="btn" >Отправить запрос</button>
             </div>
       </div>
      
 
             <input type="hidden" name="Email" />
 
-            <div class="project-price-calculate-btn-container">
-              <button class="btn" >Отправить запрос</button>
-            </div>
+           
           </div>
         </form>
       </section>

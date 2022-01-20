@@ -31,6 +31,16 @@
   text-align: center;
 }
 
+.site-type,
+.work-types-title,
+.project-cost-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 16px;
+  display: block;
+}
 .project-price-select {
   font-family: 'Montserrat', sans-serif;
 }
@@ -71,6 +81,7 @@
   color: #4f4f4f;
   border-bottom: 1px solid #4f4f4f;
   padding-bottom: 8px;
+  width: 100%;
 }
 .activity-type-item {
   margin-bottom: 12px;
