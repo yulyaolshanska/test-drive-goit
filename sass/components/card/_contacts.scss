@@ -31,9 +31,21 @@
 }
 .contacts__icon {
   margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
 }
+
 .contacts__link {
   display: flex;
   align-items: center;
   color: #4f4f4f;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
